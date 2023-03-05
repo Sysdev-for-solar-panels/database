@@ -1,12 +1,12 @@
-Structure of Database
+##Structure of Database##
 
-[User]
+**[User]**
   id: int
   name: text
   email: text
   role: text
 
-[projects]
+**[projects]**
   id: int
   name: text 
   start_date: date
@@ -15,14 +15,14 @@ Structure of Database
   created_at: timestamp
   updated_at: timestamp
 
-[project_parts]
+**[project_parts]**
   id: int
   project_id: int
   part_name: text
   quantity: int
   storage_location: text
 
-[project_logs]
+**[project_logs]**
   id: int
   project_id: int
   status: text
@@ -31,14 +31,14 @@ Structure of Database
   created_at: timestamp
   updated_at: timestamp
 
-[orders]
+**[orders]**
   id: int
   order_date: date
   part_name: text
   quantity: int
   supplier: text
   
-[inventory]
+**[inventory]**
   id: int
   part_name: text
   quantity: int
