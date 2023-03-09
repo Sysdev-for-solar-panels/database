@@ -6,14 +6,6 @@ CREATE TABLE users (
   role VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE session (
-    session_id serial PRIMARY KEY,
-    user_id integer NOT NULL,
-    start_time timestamp NOT NULL,
-    end_time timestamp,
-    duration interval
-);
-
 CREATE TABLE projects (
   id SERIAL PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
